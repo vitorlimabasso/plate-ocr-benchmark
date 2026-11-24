@@ -1,0 +1,33 @@
+================================================================================
+RESULTADOS DE RECONHECIMENTO OCR - EASYOCR
+Total de Imagens Processadas: 20
+================================================================================
+
+Resumo Rápido:
+ - Placas Válidas Reconhecidas: 8/20 (40.0%)
+ - Tempo Médio de Execução por Imagem: 250.85 ms
+
+--------------------------------------------------------------------------------
+Imagem          | Texto Bruto          | Placa Extraída  | Padrão                 | Tempo (ms)
+--------------------------------------------------------------------------------
+1.JPG           | BRHF41T2BRASIL       | HF41T2          | Inválido/Incompleto    | 292.2     
+10.JPG          | P17M                 | P17M            | Inválido/Incompleto    | 282.4     
+11.JPG          | BRMNL3428            | MNL3428         | Cinza/Antiga           | 157.0     
+12.JPG          | BRET7G88BRASIL       | ET7G88          | Inválido/Incompleto    | 228.4     
+13.JPG          | AB8082BRAML          | AB8082          | Inválido/Incompleto    | 278.8     
+14.JPG          | BRPHH8HOBRASIL       | PHH8HO          | Inválido/Incompleto    | 299.0     
+15.JPG          | RTNZEJ2              | RTN2E12         | Mercosul (Corrigido)   | 222.1     
+16.JPG          | RW4K5055             | WAK5O55         | Mercosul (Corrigido)   | 229.8     
+17.JPG          | BRNZQ37RASIL         | BRN2Q37         | Mercosul (Corrigido)   | 305.1     
+18.JPG          | JRXDASE5O            | XDA5E50         | Mercosul (Corrigido)   | 222.0     
+19.JPG          | BRES14123            | ESI4I23         | Mercosul (Corrigido)   | 217.7     
+2.JPG           | BRNEEVTO88RASIL      | EEV7O88         | Mercosul (Corrigido)   | 228.7     
+20.JPG          |                      |                 | Inválido/Incompleto    | 229.8     
+3.JPG           | BRIZ2Z18BRASIL       | IZ2Z18          | Inválido/Incompleto    | 310.0     
+4.JPG           | QOWALZ               | QOWALZ          | Inválido/Incompleto    | 229.0     
+5.JPG           | GRT                  | GRT             | Inválido/Incompleto    | 224.2     
+6.JPG           | 3X75                 | 3X75            | Inválido/Incompleto    | 237.2     
+7.JPG           | BRGXQ2BRASI          | BRGXQ2          | Inválido/Incompleto    | 324.6     
+8.JPG           | BRXQU22BRASIL        | BRX0U22         | Mercosul (Corrigido)   | 216.4     
+9.JPG           | BRAALJ16BRASIL       | AALJ16          | Inválido/Incompleto    | 282.8     
+--------------------------------------------------------------------------------

@@ -1,0 +1,33 @@
+================================================================================
+RESULTADOS DE RECONHECIMENTO OCR - TESSERACT OCR
+Total de Imagens Processadas: 20
+================================================================================
+
+Resumo Rápido:
+ - Placas Válidas Reconhecidas: 14/20 (70.0%)
+ - Tempo Médio de Execução por Imagem: 298.80 ms
+
+--------------------------------------------------------------------------------
+Imagem          | Texto Bruto          | Placa Extraída  | Padrão                 | Tempo (ms)
+--------------------------------------------------------------------------------
+1.JPG           | 1FA1TISI             | IFA1T15         | Mercosul (Corrigido)   | 367.4     
+10.JPG          | 1PP7                 | 1PP7            | Inválido/Incompleto    | 509.9     
+11.JPG          | PANESUIS             | ANE5U15         | Mercosul (Corrigido)   | 475.5     
+12.JPG          | JET7G88I             | JET7G88         | Mercosul               | 289.2     
+13.JPG          | PABPSGS9             | ABP5G59         | Mercosul (Corrigido)   | 128.9     
+14.JPG          | CPHI8HGD             | PHI8H60         | Mercosul (Corrigido)   | 141.8     
+15.JPG          | THYZE19              | THY2E19         | Mercosul (Corrigido)   | 133.0     
+16.JPG          | UHK5055              | UHK5055         | Cinza/Antiga           | 131.4     
+17.JPG          | ENZS7                | ENZS7           | Inválido/Incompleto    | 142.9     
+18.JPG          | XDA5SESO             | DAS5E50         | Mercosul (Corrigido)   | 128.6     
+19.JPG          | PESIGI95             | PES1G19         | Mercosul (Corrigido)   | 494.0     
+2.JPG           | PNEV1CGS             | NEV1C65         | Mercosul (Corrigido)   | 125.1     
+20.JPG          | S LL                 | SLL             | Inválido/Incompleto    | 536.8     
+3.JPG           | TVZ2Z18              | TVZ2Z18         | Mercosul               | 119.8     
+4.JPG           | JQOWON4S7            | QOW0N45         | Mercosul (Corrigido)   | 132.2     
+5.JPG           | EF25                 | EF25            | Inválido/Incompleto    | 501.2     
+6.JPG           | SX79D                | SX79D           | Inválido/Incompleto    | 505.4     
+7.JPG           | 1GXQ2                | 1GXQ2           | Inválido/Incompleto    | 355.2     
+8.JPG           | PXHY6U29             | XHY6U29         | Mercosul               | 389.2     
+9.JPG           | 1A0A4J316            | IAO4A13         | Mercosul (Corrigido)   | 368.3     
+--------------------------------------------------------------------------------

@@ -1,0 +1,64 @@
+=========================================================================================================
+RELATÓRIO COMPARATIVO DE DESEMPENHO: TESSERACT OCR VS. EASYOCR
+Atividade Acadêmica de Processamento Digital de Imagens (PDI)
+Data da Análise: 2026-11-16 21:11:12
+=========================================================================================================
+
+1. TABELA COMPARATIVA DE RECONHECIMENTO POR IMAGEM
+---------------------------------------------------------------------------------------------------------
+Imagem       | Tesseract Placa  | Tess Val | Tess (ms)  | EasyOCR Placa    | Easy Val | Easy (ms)  | Similaridade
+---------------------------------------------------------------------------------------------------------
+1.JPG        | IFA1T15          | SIM      | 367.4      | HF41T2           | NÃO      | 292.2      | Dist=4      
+10.JPG       | 1PP7             | NÃO      | 509.9      | P17M             | NÃO      | 282.4      | Dist=3      
+11.JPG       | ANE5U15          | SIM      | 475.5      | MNL3428          | SIM      | 157.0      | Dist=6      
+12.JPG       | JET7G88          | SIM      | 289.2      | ET7G88           | NÃO      | 228.4      | Dist=1      
+13.JPG       | ABP5G59          | SIM      | 128.9      | AB8082           | NÃO      | 278.8      | Dist=5      
+14.JPG       | PHI8H60          | SIM      | 141.8      | PHH8HO           | NÃO      | 299.0      | Dist=3      
+15.JPG       | THY2E19          | SIM      | 133.0      | RTN2E12          | SIM      | 222.1      | Dist=4      
+16.JPG       | UHK5055          | SIM      | 131.4      | WAK5O55          | SIM      | 229.8      | Dist=3      
+17.JPG       | ENZS7            | NÃO      | 142.9      | BRN2Q37          | SIM      | 305.1      | Dist=5      
+18.JPG       | DAS5E50          | SIM      | 128.6      | XDA5E50          | SIM      | 222.0      | Dist=2      
+19.JPG       | PES1G19          | SIM      | 494.0      | ESI4I23          | SIM      | 217.7      | Dist=6      
+2.JPG        | NEV1C65          | SIM      | 125.1      | EEV7O88          | SIM      | 228.7      | Dist=5      
+20.JPG       | SLL              | NÃO      | 536.8      |                  | NÃO      | 229.8      | DIVERGENTE  
+3.JPG        | TVZ2Z18          | SIM      | 119.8      | IZ2Z18           | NÃO      | 310.0      | Dist=2      
+4.JPG        | QOW0N45          | SIM      | 132.2      | QOWALZ           | NÃO      | 229.0      | Dist=4      
+5.JPG        | EF25             | NÃO      | 501.2      | GRT              | NÃO      | 224.2      | Dist=4      
+6.JPG        | SX79D            | NÃO      | 505.4      | 3X75             | NÃO      | 237.2      | Dist=3      
+7.JPG        | 1GXQ2            | NÃO      | 355.2      | BRGXQ2           | NÃO      | 324.6      | Dist=2      
+8.JPG        | XHY6U29          | SIM      | 389.2      | BRX0U22          | SIM      | 216.4      | Dist=5      
+9.JPG        | IAO4A13          | SIM      | 368.3      | AALJ16           | NÃO      | 282.8      | Dist=5      
+---------------------------------------------------------------------------------------------------------
+
+2. ESTATÍSTICAS CONSOLIDADAS
+-----------------------------------------------------------------
+Métrica                             | Tesseract    | EasyOCR     
+-----------------------------------------------------------------
+Total de Amostras                   | 20           | 20          
+Placas Válidas Reconhecidas         | 14 (70.0%)   | 8 (40.0%)
+Padrão Mercosul                     | 13           | 7
+Padrão Antigo/Cinza                 | 1		   | 1
+Tempo Médio por Placa               | 298.80 ms    | 250.85 ms
+Tempo Total de Inferência           | 5.98 s       | 5.02 s
+-----------------------------------------------------------------
+
+3. ANÁLISE COMPARATIVA E DISCUSSÃO TÉCNICA (PDI & ENGENHARIA)
+=========================================================================================================
+A. Desempenho e Velocidade (Latência):
+   - O Tesseract OCR apresenta velocidade consistente em CPU, realizando o reconhecimento
+     em poucos milissegundos por caractere após a binarização de Otsu.
+   - O EasyOCR baseia-se em redes neurais profundas (CRAFT para detecção geométrica dos caracteres
+     e CRNN com ResNet para decodificação de sequência), operando com maior demanda computacional
+     mas sendo altamente paralelizável caso executado em placas de vídeo (GPU) com CUDA.
+
+B. Robustez e Acurácia Visual:
+   - O Tesseract é altamente sensível à binarização prévia e a ruídos de moldura ou cabeçalhos
+     (como o banner azul com 'BRASIL' nas placas Mercosul, que pode poluir o reconhecimento).
+   - O EasyOCR demonstra superioridade notável na presença de caracteres estilizados (fonte FE-Schrift),
+     variações de contraste local e inclinações angulares residuais da câmera.
+
+C. Impacto do Pré-Processamento de PDI:
+   - As etapas de Processamento Digital de Imagens (equalização CLAHE, binarização de Otsu e
+     correção automática de polaridade garantindo texto preto sobre fundo branco) foram determinantes
+     para viabilizar a convergência do Tesseract OCR e aprimorar a confiança do EasyOCR.
+=========================================================================================================

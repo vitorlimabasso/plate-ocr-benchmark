@@ -1,0 +1,8 @@
+opencv-python>=4.8.0
+pytesseract>=0.3.10
+numpy>=1.24.0
+Pillow>=9.5.0
+
+# Instalar o Tesseract separadamente:
+# Windows: https://github.com/UB-Mannheim/tesseract/wiki
+# Linux:   sudo apt install tesseract-ocr
